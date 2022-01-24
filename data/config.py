@@ -8,7 +8,7 @@
 # BOT_TOKEN = env.str("BOT_TOKEN")  # Bot toekn
 # ADMINS = env.list("ADMINS")  # adminlar ro'yxati
 # IP = env.str("ip")  # Xosting ip manzili
-adminlar=2001909457
+adminlar=1892438581
 
 import os
 
