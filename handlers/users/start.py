@@ -14,7 +14,7 @@ async def bot_start(message: types.Message):
         d.add_user(id=message.from_user.id,
                     name=name)
     except sqlite3.IntegrityError as err:
-        await bot.send_message(chat_id=adminlar[0],text=err)
+        pass
 
     await message.answer(f"Salom, {message.from_user.full_name}!",reply_markup=asosiy_menu)
 @dp.message_handler(text='🟣 Ucell')
