@@ -9,7 +9,10 @@ from utils.set_bot_commands import set_default_commands
 async def on_startup(dispatcher):
     # Birlamchi komandalar (/star va /help)
     await set_default_commands(dispatcher)
-
+    try:
+        d.create_table_users()
+    except Exception as s:
+        pass
     # Bot ishga tushgani haqida adminga xabar berish
     await on_startup_notify(dispatcher)
 
